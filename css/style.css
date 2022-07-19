@@ -1,0 +1,181 @@
+*{
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+}
+
+.banner{
+      min-width: auto;
+      min-height: 100vh;
+      background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/hero.jpg);
+      background-size: cover;
+      padding: 0 8%;
+      background-position: center;
+}
+
+.navbar .nav-logo img{
+      height: 50px;
+}
+
+.nav-logo{
+      display: flex;
+      align-items: center;
+      font-size: small;
+      color: white;
+      /* border: 1px solid white; */
+
+}
+
+.navbar{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      /* border: 1px solid white; */
+      padding-top: 20px;
+      
+}
+
+.nav-links{
+      /* border: 1px solid white; */
+      display: flex;
+      align-items: center;
+      flex: 1;
+      justify-content: space-between;
+      /* border: 1px solid white; */
+}
+.nav-links a{
+      font-size: small;
+      text-decoration: none;
+      margin-left: 40px;
+      color: white;
+      /* font-weight: bold; */
+}
+
+.nav-links .btn-signup{
+      /* atas bawah=8px ,kanan kiri = 30px */
+      padding: 8px 30px;
+      background: orange;
+      color: white;
+      border-radius: 5px;
+}
+
+.nav-links .btn-signup:hover{
+      background: white;
+      color: black;
+      transition: 0.5s;
+}
+
+
+.content{
+      color: white;
+      margin-top: 180px;
+
+}
+
+.content h1{
+      font-size: 60px;
+}
+
+.search-box{
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      background: white;
+      padding: 18px 20px;
+      margin: 20px 0;
+      border-radius: 5px;
+}
+
+.search-box input{
+      background: transparent;
+      outline: none;
+      border: none;
+      width: 700px;
+}
+
+.search-box button{
+      background: transparent;
+      border: none;
+      cursor: pointer;
+}
+
+.slider button{
+      margin-top: 70px;
+      border: none;
+      border-radius: 5px;
+      background: transparent;
+      cursor: pointer;
+}
+.slider button img{
+      /* background: transparent; */
+      /* margin-top: 30px; */
+      height: 20px;
+      /* background: transparent; */
+}
+
+
+/* Responsive Code */
+@media (max-width:700px){
+      .search-box input{
+            width: 230px;
+      }
+
+      .content{
+            margin-top: 150px;
+      }
+
+      .nav-logo {
+            flex-basis: 100%;
+            text-align: center;
+            justify-content: center;
+            margin-top: 30px;
+            /* border: 1px solid white; */
+      }
+
+      .nav-links{
+            justify-content: center;
+            /* border: 1px solid white; */
+      }
+
+      .nav-links a{
+            margin-left: 20px;
+      }
+
+      .nav-links .btn-signup{
+            padding: 0;
+            background: transparent;
+            color: white;
+      }
+
+      .content h1{
+            font-size: 30px;
+      }
+
+      /* search box learn anything */
+      .search-box  {
+            padding: 10px 10px;
+      }
+
+      .search-box input{
+            width: 250px;
+      }
+      
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
